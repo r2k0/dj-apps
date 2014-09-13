@@ -57,3 +57,4 @@ target/
 *.swp
 py-snippets/who.py2 
 .DS_Store 
+rango.db 

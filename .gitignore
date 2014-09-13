@@ -55,5 +55,5 @@ target/
 
 # vim stuff
 *.swp
-py-snippets/who.py2 py-snippets/who.py2
+py-snippets/who.py2 
 .DS_Store 

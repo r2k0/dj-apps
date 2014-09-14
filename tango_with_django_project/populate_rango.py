@@ -44,7 +44,16 @@ def populate():
         for p in Page.objects.filter(category=c):
             print "- {0} - {1}".format(str(c), str(p))
 
-def add_page(cat, title, url, views=0):
+def add_page(cat, title, url, views=0, likes=0):
+	if cat == python_cat:
+		views = 128
+		likes = 64
+	elif cat == django_cat:
+		views = 64
+		likes = 32
+	else:
+		views = 32
+		likes = 16	
     p = Page.objects.get_or_create(category=cat, title=title, url=url, views=views)[0]
     return p
 

@@ -1,4 +1,8 @@
+import os
 # Django settings for twdp project.
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
